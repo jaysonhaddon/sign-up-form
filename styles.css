@@ -18,12 +18,12 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("./img/galaxy.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40%;
+  width: 60%;
   text-align: center;
 }
 
@@ -57,13 +57,88 @@ body {
 }
 
 .form-info {
-  background-color: lightgoldenrodyellow;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.form-info p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 60%;
 }
 
 form {
-  background-color: lightcoral;
+  z-index: 5;
+  background-color: rgb(214, 231, 233);
+  box-shadow: 0 5px 10px -5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 50px;
+}
+
+form legend {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form section {
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+}
+
+form fieldset {
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+form fieldset label {
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+form fieldset input {
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 .form-footer {
-  background-color: lightblue;
+  background-color: whitesmoke;
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+button {
+  background-color: rgb(8, 81, 98);
+  box-shadow: 0 0 10px black;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  width: 200px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-footer p a {
+  color: rgb(8, 81, 98);
+  font-weight: bold;
+  text-decoration: none;
 }

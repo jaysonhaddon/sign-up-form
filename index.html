@@ -43,8 +43,37 @@
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <form action="#" method="POST"></form>
-      <div class="form-footer"></div>
+      <form id="form" action="#" method="POST">
+        <legend>Lets do this!</legend>
+        <section>
+          <fieldset>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" required />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required />
+            <label for="pwd">PASSWORD</label>
+            <input type="password" id="pwd" name="user-pwd" required />
+          </fieldset>
+          <fieldset>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" required />
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" required />
+            <label for="pwd-confirm">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              id="pwd-confirm"
+              name="user-pwd-confirm"
+              required
+            />
+          </fieldset>
+        </section>
+      </form>
+      <div class="form-footer">
+        <button type="submit" form="form">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+        <input type="color" />
+      </div>
     </div>
   </body>
 </html>
