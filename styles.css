@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+:root {
+  --form-color: rgb(41, 71, 130);
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -17,7 +21,7 @@ body {
 .brand-section {
   margin: 0;
   padding: 0;
-  background-image: url("./img/galaxy.jpg");
+  background-image: url("./img/test.jpg");
   background-size: 100% 100%;
   color: #fff;
   display: flex;
@@ -68,18 +72,17 @@ body {
 
 .form-info p {
   font-size: 1.5rem;
-  font-weight: bold;
-  width: 60%;
 }
 
 form {
   z-index: 5;
-  background-color: rgb(214, 231, 233);
+  color: #fff;
+  background-color: var(--form-color);
   box-shadow: 0 5px 10px -5px black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-left: 50px;
+  padding: 25px 50px;
 }
 
 form legend {
@@ -126,7 +129,7 @@ form fieldset input {
 }
 
 button {
-  background-color: rgb(8, 81, 98);
+  background-color: var(--form-color);
   box-shadow: 0 0 10px black;
   font-size: 1rem;
   font-weight: bold;
@@ -138,7 +141,7 @@ button {
 }
 
 .form-footer p a {
-  color: rgb(8, 81, 98);
+  color: var(--form-color);
   font-weight: bold;
   text-decoration: none;
 }
