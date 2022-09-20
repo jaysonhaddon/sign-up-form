@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
     <title>Sign Up Form</title>
   </head>
   <body>
@@ -43,35 +44,54 @@
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <form id="form" action="#" method="POST">
+      <form id="form" method="POST">
         <legend>Lets do this!</legend>
         <section>
           <fieldset>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" required />
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" required />
-            <label for="pwd">PASSWORD</label>
-            <input type="password" id="pwd" name="user-pwd" required />
+            <label for="first-name"
+              >FIRST NAME
+              <input type="text" id="first-name" name="first-name" required />
+            </label>
+            <label for="last-name"
+              >LAST NAME
+              <input type="text" id="last-name" name="last-name" required />
+            </label>
           </fieldset>
           <fieldset>
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" required />
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone" required />
-            <label for="pwd-confirm">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              id="pwd-confirm"
-              name="user-pwd-confirm"
-              required
-            />
+            <label for="email"
+              >EMAIL <input type="email" id="email" name="email" required />
+            </label>
+            <label for="phone"
+              >PHONE NUMBER
+              <input type="tel" id="phone" name="phone" required />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="pwd"
+              >PASSWORD
+              <input
+                type="password"
+                id="pwd"
+                name="user-pwd"
+                class="password"
+                required
+              />
+            </label>
+            <label for="pwd-confirm"
+              >CONFIRM PASSWORD
+              <input
+                type="password"
+                id="pwd-confirm"
+                name="user-pwd-confirm"
+                class="password"
+                required
+            /></label>
           </fieldset>
         </section>
       </form>
       <div class="form-footer">
         <button type="submit" form="form">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
+        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </body>
