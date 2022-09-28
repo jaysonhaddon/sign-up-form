@@ -148,6 +148,10 @@ button {
   border: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .form-footer p a {
   color: var(--form-color);
   font-weight: bold;

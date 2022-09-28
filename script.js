@@ -13,10 +13,7 @@ function comparePasswords() {
   if (password != "" && confirmPassword != "") {
     if (password != confirmPassword) {
       if (error == undefined) {
-        error = document.createElement("p");
-        error.setAttribute("id", "error");
-        error.setAttribute("class", "error");
-        error.textContent = "* Passwords do not match!";
+        error = createError();
         form.appendChild(error);
       }
     } else {
@@ -24,4 +21,12 @@ function comparePasswords() {
       error = undefined;
     }
   }
+}
+
+function createError() {
+  tmp = document.createElement("p");
+  tmp.setAttribute("id", "error");
+  tmp.setAttribute("class", "error");
+  tmp.textContent = "* Passwords do not match!";
+  return tmp;
 }
